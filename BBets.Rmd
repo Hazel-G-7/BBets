@@ -42,6 +42,20 @@ The function will be given a class_size by number of students, odds, and Number_
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
+```{r}
+for (student in 20:30 ) 
+    winnings =BrLw(student,1,637)
+     print(paste(student,winnings) )
+```
+
+```{r}
+winnings= matrix('numeric')
+for ( i in 1:500) {
+winnings[i] =BrLw(35,2,637)
+}
+print (winnings)
+```
+  
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
@@ -54,7 +68,7 @@ The function will be given a class_size by number of students, odds, and Number_
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
-
+There's fair amount of numbers of students in each class would be 28, earning less than $21.
 
 
 
